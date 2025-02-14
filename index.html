@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuldeep's Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+        <div class="logo">KULDEEP SAI SALAVADI</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="intro-container">
+            <div class="intro-text">
+            <h1>Hello, I'm Kuldeep</h1>
+            <h2>software tester</h2>
+            <p>"An enthusiastic coder"</p>  
+        </div>
+        <div class="intro-image">
+            <img ------------------------------------------------>
+        </div>
+        </div>
+        <div class="resume-buttons">
+            <a href="KD CV.pdf" target="_blank" class="btn view-btn">View Resume</a>
+            <a href="KD CV.pdf" download class="btn download-btn">Download Resume</a>
+
+        </div>
+    </section>
+
+
+
+    <section id="about">
+        <div class="about-content">
+
+            <h2>About Me</h2><br><br>
+            <p>
+                 Hi there! I'm Kuldeep, a committed learner and future software tester who has a strong interest in coding. I first became interested in technology because I loved playing video games as a kid and I found the design and functionality of these games to be exciting. My interest in software development came from this curiosity, with a focus on making sure that software not only functions effectively but also offers users a smooth experience.
+            </p>
+
+            <p>
+                I can go into the details, identify any problems, and add to the development of applications that work through testing. Apart from testing, I like to code because it allows me to learn about software architecture and study the reasoning behind apps. Coding and testing together improve my problem-solving abilities and improve my understanding of the full development lifecycle.
+            </p>
+
+            <p>
+                I'm eager to maintain improving my technical skills and am dedicated to lifelong learning. I'm excited to contribute the same curiosity and commitment that inspired my career to the software development industry.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            
+            <div class="education-item">
+                <h3>Bachelors in Mechanical Engineering </h3>
+                <p>Jawaharlal Nehru Technological University</p>
+                <p class="details">2014-2018 | Telangana, India</p>
+            </div>
+            <div class="education-item">
+                <h3>PG Diploma in Software Testing</h3>
+                <p>Cégep de la Gaspésie et des Îles</p>
+                <p class="details">2023-2025 | Quebec, Canada</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <div class="skill-box">HTML</div>
+                <div class="skill-box">CSS</div>
+                <div class="skill-box">JavaScript</div>
+                <div class="skill-box">Python</div>
+                <div class="skill-box">PHP</div>
+                <div class="skill-box">Java</div>
+                <div class="skill-box">MySQL</div>
+                <div class="skill-box">React JS</div>
+                <div class="skill-box">Selenium</div>
+                <div class="skill-box">GitHub</div>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('html-css')">HTML & CSS</button>
+            <button onclick="filterProjects('react')">React</button>
+            <button onclick="filterProjects('automated-testing')">Automated Testing</button>
+            <button onclick="filterProjects('manual-testing')">Manual Testing</button>
+        </div>
+    
+        <div class="projects-container" id="projectsContainer">
+            <div class="project-card html-css">
+                <img src="Manual.png" alt="HTML & CSS Project Screenshot">
+                <h3>HTML & CSS Project</h3>
+                <p>It is a Bike Rental Project.</p>
+                <a href="https://github.com/saikuldeep-96/Bike-Rental-Project.git" >View on GitHub</a>
+            </div>
+            
+            <div class="project-card react">
+                <img src="react.png" alt="React Project Screenshot">
+                <h3>React Project</h3>
+                <p>It is my first React project.</p>
+                <a href=https://github.com/sujanasrim/SVInteriors.git >View on GitHub</a>
+            </div>
+            
+            <div class="project-card automated-testing">
+                <img src="auto testing.png" alt="Automated Testing Project Screenshot">
+                <h3>Automated Testing Project</h3>
+                <p>This is my first Automated Testing project where I used selenium.</p>
+                <a href="https://github.com/saikuldeep-96/proj2.git" >View on GitHub</a>
+            </div>
+            
+            <div class="project-card manual-testing">
+                <img src="html.png" alt="Manual Testing Project Screenshot">
+                <h3>Manual Testing Project</h3>
+                <p>This is my first Manual Testing project in my college. Contact me if you want to know more about it.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>Have questions or want to work together? Fill out the form below, and I'll get back to you soon!</p>
+            <form action="https://formsubmit.co/varuntej436@gmail.com" method="POST">
+                
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message here" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <script src="script1.js"></script>
+    
+</body>
+</html>
